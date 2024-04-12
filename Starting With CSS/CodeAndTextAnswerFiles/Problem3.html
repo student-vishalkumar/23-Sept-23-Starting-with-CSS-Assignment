@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charstet="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Problem3</title>
+<style>
+.firstName {
+background-color: #16080f;
+}
+.lastName {
+background-color: green;
+}
+.email {
+background-color: yellow;
+}
+.password {
+    background-color: #1e24a7;
+}
+.confirmPassword {
+    background-color: beige;
+}
+.age {
+    background-color: blanchedalmond;
+}
+#terms:checked {
+/* This is the property used to color checkbox checked state */
+accent-color: violet;
+}
+button {
+opacity: 50%;
+}
+</style>
+</head>
+<body>
+<form>
+<label for="firstName">First Name:
+<input type="text" name="firstName" class="firstName" placeholder="firstName" id="firstName"
+required minlength=3
+max=20 />
+</label>
+<br>
+<label for="lastName">last Name:
+<input type="text" name="lastName" class="lastName" placeholder="lastName" id="lastName"
+required min=3 max=20 />
+</label>
+<br>
+<label for="email">Email:
+    <input type="email" name="email" class="email" placeholder="abc@gmail.com" id="email"
+    required />
+    </label>
+    <br>
+    <label for="password">Password:
+    <input type="password" name="password" class="password" placeholder="........"
+    id="password" required min=8 />
+    </label>
+    <br>
+    <label for="confirmPassword">Confirm Password:
+    <input type="password" name="confirmPassword" class="confirmPassword"
+    placeholder="........" id="confirmPassword"
+    required />
+    </label>
+    <br>
+    <label for="age">Age:
+    <input type="number" name="age" class="age" placeholder="age" id="age" required min=0
+    max=150 />
+    </label>
+    <br>
+    <label for="">Gender:
+    <input type="radio" id="male" value="male" name="gender" checked />
+    <label for="male">Male</label>
+    <input type="radio" id="female" value="female" name="gender" />
+    <label for="female">Female</label>
+    <input type="radio" id="other" value="other" name="gender" />
+    <label for="other">Other</label>
+    </label>
+    <br>
+    <label for="terms">terms:
+    <input type="checkbox" id="terms" required class="checkbox" /> I agree to terms and
+    conditions
+    </label>
+    <br>
+    <button type="submit">Register</button>
+    </form>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>problem1</title>
+<!-- Inline styles -->
+<style>
+.internal {
+color: rgb(5, 18, 103);
+}
+.inline__internal {
+color: red;
+}
+.internal__ext {
+color: rgb(146, 71, 6);
+}
+.inline__internal__external {
+color: aqua;
+}
+</style>
+<!-- depending on the order external wins between internal and external since I have
+external imported after internal -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="color: red;">Inline</div>
+<div class="internal">Internal</div>
+<div class="external">External</div>
+<div style="color: blueviolet;" class="inline__internal">Inline + Internal</div>
+<div class="int__external internal__ext">Internal + External</div>
+<div style="color: blueviolet;" class="inline__internal__external">Inline + Internal +
+External</div>
+</body>
+</html>
+
